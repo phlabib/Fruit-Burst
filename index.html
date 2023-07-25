@@ -48,33 +48,85 @@
   <body class="container mx-auto">
     <!-- Navbar section -->
     <nav>
-      <section class="flex bg-[#F85559] rounded-full justify-between items-center p-4 mt-8">
-        <!-- Menu items -->
-        <div class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-x-4 text-white ml-4">
+      <div class="hidden md:block">
+        <section
+          class="flex bg-[#F85559] rounded-full justify-between items-center p-4 mt-8"
+        >
+          <!-- Menu items -->
+          <div
+            class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-x-4 text-white ml-4"
+          >
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Shop</a>
+            <a href="#">All Fruits</a>
+          </div>
+
+          <!-- Logo items -->
+          <div class="flex items-center gap-4">
+            <img src="./images/logo.png" alt="" />
+            <h2 class="text-5xl font-semibold text-white">Fruit Burst</h2>
+          </div>
+
+          <!-- Search item -->
+          <div class="flex items-center justify-center mr-4">
+            <div class="px-4 py-2 rounded-full shadow-md bg-white">
+              <div class="flex items-center">
+                <input type="text" placeholder="Search here . . ." />
+                <button>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- For mobile view -->
+      <div class="block md:hidden">
+        <div class="flex items-center justify-between mt-4 ml-4 mr-4">
+          <!--Mobile Logo -->
+          <div class="flex gap-2">
+            <img class="h-9" src="./images/logo.png" alt="" />
+            <h2 class="text-2xl font-semibold text-black">Fruit Burst</h2>
+          </div>
+          <!-- Mobile Menus -->
+          <div>
+            <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden" id="mobileMenuContent">
+        <!-- menus -->
+        <div class="flex flex-col text-xl ml-4 mt-2 gap-4">
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Shop</a>
           <a href="#">All Fruits</a>
         </div>
-
-        <!-- Logo items -->
-        <div class="flex items-center gap-4 ">
-          <img src="./images/logo.png" alt="" />
-          <h2 class="text-5xl font-semibold text-white">Fruit Burst</h2>
-        </div>
-
-        <!-- Search item -->
-        <div class="flex items-center justify-center mr-4">
-          <div class="px-4 py-2 rounded-full shadow-md bg-white">
-            <div class="flex items-center">
-              <input type="text" placeholder="Search here . . ." />
-              <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+        <!-- Searchbar -->
+        <div>
+                <div class=" items-center px-5 py-5 rounded-md shadow-md bg-white m-4">
+                    <div class="flex items-center justify-between">
+                      <input type="text" placeholder="Search here . . ." />
+                      <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                  </div>
             </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </nav>
+    <script>
+        function toggleMenu() {
+      const mobileMenuContent = document.getElementById('mobileMenuContent')
+      if (mobileMenuContent.getAttribute('class') === 'hidden') {
+        mobileMenuContent.setAttribute('class', 'block')
+      } else {
+        mobileMenuContent.setAttribute('class', 'hidden')
+      }
+ }
+    </script>
   </body>
 </html>
