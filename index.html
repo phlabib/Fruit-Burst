@@ -1,52 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="Capcake">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- Tailwind and Daisy link -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
-        rel="stylesheet"
-        type="text/css"
-      />
-  
-      <!-- Tailwind Cnd -->
-      <script src="https://cdn.tailwindcss.com"></script>
-  
-      <!-- Google FOnts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furit Burst</title>
+    <!-- Tailwind and Daisy link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-        
-      <!-- font awesome link -->
-      <script
-        src="https://kit.fontawesome.com/0cc9b33cd8.js"
-        crossorigin="anonymous"
-      ></script>
-  
-      <!-- Tailwind Customization area -->
-      <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-              
-              },
-            },
+    <!-- Tailwind Cnd -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/0cc9b33cd8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tailwind Customization area -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
           },
-        };
-      </script>
-  
-      <style>
-        .font-lato {
-            font-family: 'Lato', sans-serif;
-        }
-      </style>
+        },
+      };
+    </script>
 
-</head>
-<body>
-    
-</body>
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="container mx-auto">
+    <!-- Navbar section -->
+    <nav>
+      <section class="flex bg-[#F85559] rounded-full justify-between items-center p-4 mt-8">
+        <!-- Menu items -->
+        <div class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-x-4 text-white ml-4">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Shop</a>
+          <a href="#">All Fruits</a>
+        </div>
+
+        <!-- Logo items -->
+        <div class="flex items-center gap-4 ">
+          <img src="./images/logo.png" alt="" />
+          <h2 class="text-5xl font-semibold text-white">Fruit Burst</h2>
+        </div>
+
+        <!-- Search item -->
+        <div class="flex items-center justify-center mr-4">
+          <div class="px-4 py-2 rounded-full shadow-md bg-white">
+            <div class="flex items-center">
+              <input type="text" placeholder="Search here . . ." />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+  </body>
 </html>
