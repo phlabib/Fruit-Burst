@@ -306,11 +306,54 @@
                 <i class="fa-regular fa-star text-[#FBC0A8]"></i>
                 <i class="fa-regular fa-star text-[#FBC0A8]"></i>
               </div>
-              <p class="text-[#F85559]">Details</p>
+            
+              
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn bg-transparent border-none text-[#F85559] " onclick="my_modal_1.showModal()">Details</button>
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box">
+    <div>
+      <figure class="px-10 pt-10">
+        <img
+          src="./images/fruit6.png"
+          alt=""
+          class="rounded-xl px-1 py-2 box-border"
+        />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title mb-4">12.90$ - 18.85$</h2>
+        <p>Apples</p>
+        <div>
+          <i class="fa-solid fa-star text-[#F85559]"></i>
+          <i class="fa-solid fa-star-half-stroke text-[#F85559]"></i>
+          <i class="fa-regular fa-star text-[#FBC0A8]"></i>
+          <i class="fa-regular fa-star text-[#FBC0A8]"></i>
+          <i class="fa-regular fa-star text-[#FBC0A8]"></i>
+        </div>
+    </div>
+    <div class="modal-action items-center justify-center">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="btn bg-[#F85559] text-white p-4">Buy Now</button>
+
+    </div>
+  </form>
+</dialog>
+
+
+
+
+
+
             </div>
           </div>
 
           <!-- cards 2 -->
+
+
+
+
+          
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img
@@ -329,6 +372,9 @@
                 <i class="fa-regular fa-star text-[#FBC0A8]"></i>
                 <i class="fa-regular fa-star text-[#FBC0A8]"></i>
               </div>
+
+
+              
               <p class="text-[#F85559]">Details</p>
             </div>
           </div>
@@ -389,8 +435,8 @@
 
       <!-- Meet the team section -->
       
- <section class="mx-4 mt-6 md:mt- mb-20">
-  <div class="container mx-auto  pt-6 lg:pt-[120px] lg:pb-[120px] rounded-[8px]  team-section">
+ <section class="mx-4 mt-6 md:mt- mb-0">
+  <div class="container mx-auto   pt-6 md:pt-[10px] md:pb-[10px] rounded-[8px]  team-section">
 
 
   
@@ -521,35 +567,36 @@
       </div>
 
     </main>
-    <!-- Footer secton -->
-    <footer class="footer footer-center p-10 bg-[#121212] pt-10 mt-12 min-w-full text-base-content rounded w-[100%]">
-      <div class="flex items-center gap-4">
-        <img src="./images/logo.png" alt="" />
-        <h2 class="text-5xl font-semibold text-white">Fruit Burst</h2>
-      </div>
-      <div class="grid grid-cols-3 md:grid-flow-col  gap-4 text-white">
-        <a class="link link-hover">Home</a> 
-        <a class="link link-hover">About Us</a> 
-        <a class="link link-hover">Shop</a> 
-        <a class="link link-hover">All Fruits</a>
-        <a class="link link-hover">Support</a>
-        <a class="link link-hover">My Account</a>
-      </div> 
-      <div>
-        <div class="grid grid-flow-col gap-6">
-          <img src="./images/twitter 1.png" alt="">
-          <img src="./images/facebook 1.png" alt="">
-          <img src="./images/yt.png" alt="">
-          <img src="./images/linkedin 1.png" alt="">
-          <img src="./images/instagram 1.png" alt="">
-          <img src="./images/apple.png" alt="">
-          
-        </div>
-      </div> 
-      <div>
-        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
-      </div>
-    </footer>
+   
     
   </body>
+   <!-- Footer secton -->
+   <footer class="footer footer-center p-10 bg-[#121212] pt-10 mt-12 min-w-full text-base-content rounded w-[100%]">
+    <div class="flex items-center gap-4">
+      <img src="./images/logo.png" alt="" />
+      <h2 class="text-5xl font-semibold text-white">Fruit Burst</h2>
+    </div>
+    <div class="grid grid-cols-3 md:grid-flow-col  gap-4 text-white">
+      <a class="link link-hover">Home</a> 
+      <a class="link link-hover">About Us</a> 
+      <a class="link link-hover">Shop</a> 
+      <a class="link link-hover">All Fruits</a>
+      <a class="link link-hover">Support</a>
+      <a class="link link-hover">My Account</a>
+    </div> 
+    <div>
+      <div class="grid grid-flow-col gap-6">
+        <img src="./images/twitter 1.png" alt="">
+        <img src="./images/facebook 1.png" alt="">
+        <img src="./images/yt.png" alt="">
+        <img src="./images/linkedin 1.png" alt="">
+        <img src="./images/instagram 1.png" alt="">
+        <img src="./images/apple.png" alt="">
+        
+      </div>
+    </div> 
+    <div>
+      <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    </div>
+  </footer>
 </html>
