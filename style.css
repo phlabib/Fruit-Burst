@@ -7,6 +7,12 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 1024px) {
+  .frute-wrapper {
+    right: 30px;
+    bottom: -80px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .team-section {
     height: 1140px;
